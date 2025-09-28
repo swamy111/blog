@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Analyzer Project Documentation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .hero-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 4rem 0;
+        }
+        .feature-card {
+            transition: transform 0.3s ease;
+            border: none;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        .status-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+        }
+        .improvement-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        .improvement-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .improvement-list li:last-child {
+            border-bottom: none;
+        }
+        .tech-badge {
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold mb-4">Resume Analyzer</h1>
+                    <p class="lead mb-4">Intelligent Web Application for Real-Time Resume Analysis</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="btn btn-light btn-lg">
+                            <i class="fas fa-external-link-alt me-2"></i>View Project
+                        </a>
+                        <a href="#" class="btn btn-outline-light btn-lg">
+                            <i class="fas fa-code me-2"></i>Source Code
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <div class="card bg-white bg-opacity-10 text-white border-0">
+                                <div class="card-body text-center">
+                                    <i class="fas fa-file-alt fa-2x mb-2"></i>
+                                    <h5>PDF Analysis</h5>
+                                    <small>Real-time Resume Parsing</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="card bg-white bg-opacity-10 text-white border-0">
+                                <div class="card-body text-center">
+                                    <i class="fas fa-chart-line fa-2x mb-2"></i>
+                                    <h5>Match Scoring</h5>
+                                    <small>ATS Compatibility Analysis</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project Overview Section -->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-12 text-center mb-5">
+                <h2 class="display-6 fw-bold">📋 Project Overview</h2>
+                <p class="lead text-muted">Web-based application designed to analyze resumes in real time by extracting content, comparing it with job descriptions, and providing actionable insights</p>
+            </div>
+        </div>
+
+        <div class="row mb-5">
+            <div class="col-lg-8 mx-auto">
+                <div class="card border-primary">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">
+                            <i class="fas fa-project-diagram me-2"></i>Project Definition
+                        </h5>
+                        <p class="card-text">
+                            Resume Analyzer is an intelligent, full-stack web application that enables users to upload their resumes in PDF format and receive immediate feedback. 
+                            The system extracts textual content from resumes, compares it against user-provided job descriptions, and generates a match score. 
+                            Additionally, it highlights missing keywords, identifies formatting issues, and offers improvement suggestions, 
+                            thereby increasing the likelihood of resume shortlisting in Applicant Tracking Systems (ATS).
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Key Features Section -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <h3 class="mb-4 text-center"><i class="fas fa-star text-warning me-2"></i>Key Features & Functionality</h3>
+                
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card feature-card h-100 position-relative">
+                            <span class="badge bg-info status-badge">Core</span>
+                            <div class="card-body">
+                                <div class="text-center mb-3">
+                                    <i class="fas fa-file-upload fa-2x text-info"></i>
+                                </div>
+                                <h5 class="card-title text-center">Resume Upload</h5>
+                                <p class="card-text text-center">Allows users to upload resumes in PDF format with drag-and-drop support</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="card feature-card h-100 position-relative">
+                            <span class="badge bg-success status-badge">Core</span>
+                            <div class="card-body">
+                                <div class="text-center mb-3">
+                                    <i class="fas fa-text-height fa-2x text-success"></i>
+                                </div>
+                                <h5 class="card-title text-center">Text Extraction</h5>
+                                <p class="card-text text-center">Extracts content using reliable parsing libraries like pdf-parse and pdfjs</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="card feature-card h-100 position-relative">
+                            <span class="badge bg-warning status-badge">Core</span>
+                            <div class="card-body">
+                                <div class="text-center mb-3">
+                                    <i class="fas fa-search fa-2x text-warning"></i>
+                                </div>
+                                <h5 class="card-title text-center">Keyword Matching</h5>
+                                <p class="card-text text-center">Compares resume content against job descriptions using NLP techniques</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="card feature-card h-100 position-relative">
+                            <span class="badge bg-primary status-badge">Core</span>
+                            <div class="card-body">
+                                <div class="text-center mb-3">
+                                    <i class="fas fa-calculator fa-2x text-primary"></i>
+                                </div>
+                                <h5 class="card-title text-center">Match Scoring</h5>
+                                <p class="card-text text-center">Computes a relevance score to quantify alignment between resume and job</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="card feature-card h-100 position-relative">
+                            <span class="badge bg-danger status-badge">Core</span>
+                            <div class="card-body">
+                                <div class="text-center mb-3">
+                                    <i class="fas fa-lightbulb fa-2x text-danger"></i>
+                                </div>
+                                <h5 class="card-title text-center">Suggestions</h5>
+                                <p class="card-text text-center">Highlights missing but relevant keywords and formatting improvements</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="card feature-card h-100 position-relative">
+                            <span class="badge bg-secondary status-badge">UI</span>
+                            <div class="card-body">
+                                <div class="text-center mb-3">
+                                    <i class="fas fa-desktop fa-2x text-secondary"></i>
+                                </div>
+                                <h5 class="card-title text-center">User Interface</h5>
+                                <p class="card-text text-center">Built with React.js for intuitive interaction and responsive design</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Technical Stack Section -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <h3 class="mb-4 text-center"><i class="fas fa-laptop-code text-primary me-2"></i>Technical Stack</h3>
+                
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header bg-primary text-white">
+                                <h5 class="mb-0"><i class="fas fa-code me-2"></i>Frontend Technologies</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex flex-wrap gap-2">
+                                    <span class="badge bg-info tech-badge">HTML5</span>
+                                    <span class="badge bg-info tech-badge">CSS3</span>
+                                    <span class="badge bg-info tech-badge">JavaScript (ES6+)</span>
+                                    <span class="badge bg-success tech-badge">React.js</span>
+                                    <span class="badge bg-success tech-badge">Vite</span>
+                                    <span class="badge bg-warning tech-badge">React Dropzone</span>
+                                    <span class="badge bg-warning tech-badge">Chart.js</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header bg-dark text-white">
+                                <h5 class="mb-0"><i class="fas fa-server me-2"></i>Backend Technologies</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex flex-wrap gap-2">
+                                    <span class="badge bg-dark tech-badge">Node.js</span>
+                                    <span class="badge bg-dark tech-badge">Express.js</span>
+                                    <span class="badge bg-secondary tech-badge">pdf-parse</span>
+                                    <span class="badge bg-secondary tech-badge">pdfjs</span>
+                                    <span class="badge bg-secondary tech-badge">Multer</span>
+                                    <span class="badge bg-danger tech-badge">Natural</span>
+                                    <span class="badge bg-danger tech-badge">NLP Libraries</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Scope Section -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <h3 class="mb-4 text-center"><i class="fas fa-bullseye text-success me-2"></i>Project Scope</h3>
+                
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-text">
+                            The scope of this project encompasses the development of a responsive and interactive web application with front-end and back-end integration. 
+                            It is designed for individual users, job seekers, and career service platforms. 
+                            The solution demonstrates core full-stack development skills and lays the foundation for potential future integrations with job boards or recruitment platforms.
+                        </p>
+                        
+                        <h5 class="mt-4">Expected Outcomes:</h5>
+                        <ul>
+                            <li>A deployed web application capable of analyzing resumes in real time</li>
+                            <li>Comprehensive reports including match score, keyword gaps, and formatting suggestions</li>
+                            <li>Enhanced understanding of full-stack development, REST API integration, and ATS optimization</li>
+                            <li>Well-documented codebase suitable for further enhancements and open-source contribution</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- System Modules Section -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <h3 class="mb-4 text-center"><i class="fas fa-puzzle-piece text-info me-2"></i>System Modules</h3>
+                
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header bg-info text-white">
+                                <h5 class="mb-0"><i class="fas fa-upload me-2"></i>Resume Upload & Parsing</h5>
+                            </div>
+                            <div class="card-body">
+                                <ul class="mb-0">
+                                    <li>Supported Formats: PDF, DOCX</li>
+                                    <li>Libraries: pdf-parse (PDF text extraction), mammoth.js (DOCX parsing)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header bg-success text-white">
+                                <h5 class="mb-0"><i class="fas fa-keyboard me-2"></i>Job Description Input</h5>
+                            </div>
+                            <div class="card-body">
+                                <ul class="mb-0">
+                                    <li>Manual Input: Text-area for pasting job description</li>
+                                    <li>Predefined Templates (Future): Dropdown of common job roles</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header bg-warning text-dark">
+                                <h5 class="mb-0"><i class="fas fa-sync-alt me-2"></i>Keyword Matching & Analysis</h5>
+                            </div>
+                            <div class="card-body">
+                                <ul class="mb-0">
+                                    <li>Extract keywords from job description (NLP)</li>
+                                    <li>Compare with resume text</li>
+                                    <li>Identify missing keywords</li>
+                                    <li>Scoring Logic: Match Score (%) = (Matched Keywords / Total Keywords) × 100</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header bg-danger text-white">
+                                <h5 class="mb-0"><i class="fas fa-file-alt me-2"></i>Report Generation</h5>
+                            </div>
+                            <div class="card-body">
+                                <ul class="mb-0">
+                                    <li>Match Score (Progress Bar)</li>
+                                    <li>Missing Keywords (Highlighted List)</li>
+                                    <li>ATS Compliance Check (Future)</li>
+                                    <li>Formatting Tips (e.g., "Use bullet points")</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Development Environment Section -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <h3 class="mb-4 text-center"><i class="fas fa-tools text-secondary me-2"></i>Development Environment</h3>
+                
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>Category</th>
+                                <th>Requirements</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>OS</strong></td>
+                                <td>Windows, macOS, Linux</td>
+                            </tr>
+                            <tr>
+                                <td><strong>CPU</strong></td>
+                                <td>Core i5 or equivalent</td>
+                            </tr>
+                            <tr>
+                                <td><strong>RAM</strong></td>
+                                <td>8GB+ (for smooth development)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Storage</strong></td>
+                                <td>10GB+</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Browser</strong></td>
+                                <td>Chrome, Firefox (latest)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Code Editor</strong></td>
+                                <td>Visual Studio Code</td>
+                            </tr>
+                            <tr>
+                                <td><strong>API Testing</strong></td>
+                                <td>Postman</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Status -->
+        <div class="bg-primary text-white py-4 rounded">
+            <div class="container text-center">
+                <h5 class="mb-0">
+                    <i class="fas fa-clipboard-check me-2"></i>
+                    Project Documentation Complete - Ready for Implementation!
+                </h5>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

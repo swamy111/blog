@@ -1,0 +1,117 @@
+SCHOOL MANAGEMENT SYSTEM DOCUMENTATION
+=====================================
+
+PROJECT OVERVIEW
+----------------
+PHP School management system developed for schools or small institutes to maintain records related to students, teachers, and other academic activities.
+
+The School Management System is a comprehensive web-based application designed to streamline educational institution operations. It provides an integrated platform to manage academic and administrative tasks efficiently, reducing manual workload and improving data accessibility. The system supports multiple user roles with role-based access control, ensuring appropriate permissions for administrators, teachers, students, and owners.
+
+KEY FEATURES & FUNCTIONALITY
+----------------------------
+Core Features:
+1. Student Record Management: Comprehensive student information management including personal details, academic records, and attendance
+2. Teacher Record Management: Teacher information management with class assignments and subject specializations
+3. Attendance Management: Track student attendance with detailed reporting and analytics
+4. Exam Result Upload: Upload and manage student exam results with easy viewing options
+5. Bus Service Management: Manage student transportation with route tracking and location services
+6. Dark Theme Support: User-friendly interface with dark theme option for comfortable viewing
+
+Additional Features:
+- Notice Upload
+- Notes Upload
+- Syllabus Management
+- Time Table
+- Leave Management
+- Password Reset and Forgot Password
+
+TECHNICAL STACK
+---------------
+Backend Technologies:
+- PHP 8.1
+- MySQL Database
+- PHPMailer for Email Handling
+
+Frontend Technologies:
+- HTML5
+- CSS3
+- JavaScript
+- jQuery
+- Bootstrap 5
+
+USER ROLES & ACCESS
+-------------------
+Administrator (Full Access)
+Manage students, teachers, classes, and system settings. Default credentials: admin@gmail.com / 123
+
+Teacher (Limited Access)
+Manage class attendance, upload marks, view timetable. Default credentials: teacher@gmail.com / 123
+
+Student (View Only)
+View results, timetable, notices, and personal information. Default credentials: student@gmail.com / 123
+
+Owner (Financial Access)
+View financial reports, student/teacher lists, payments. Default credentials: owner@gmail.com / 123
+
+Password Policy: Default passwords for all roles are set to 123 for demonstration purposes. For new teacher and student accounts, the default password is set to their date of birth (e.g., if DOB is 12 July 2000, password is 12072000).
+
+SYSTEM MODULES
+--------------
+Admin Panel:
+- Student and teacher record management
+- Marks and attendance tracking
+- Notice, notes, and syllabus upload
+- Bus service management
+- Leave management
+
+Teacher Panel:
+- Attendance management for assigned classes
+- Marks upload and result management
+- Leave application and approval
+- Timetable viewing
+- Student progress tracking
+
+Student Panel:
+- View exam results and progress reports
+- Check timetable and syllabus
+- View notices and uploaded notes
+- Track bus location
+- Apply for leave
+
+Owner Panel:
+- Financial reports and payment tracking
+- Student and teacher lists
+- System usage analytics
+- Institute performance overview
+
+SETUP & INSTALLATION
+--------------------
+System Requirements:
+- Web Server: Apache (XAMPP recommended)
+- Backend: PHP 8.1
+- Database: MySQL
+- Browser: Modern web browser (Chrome, Firefox, Safari, Edge)
+
+Installation Steps:
+1. Start XAMPP and ensure Apache and MySQL servers are running
+2. Create a database named _sms in phpMyAdmin
+3. Import the database schema from database/_sms.sql
+4. Place the project folder in your htdocs directory (e.g., C:\xampp\htdocs\school-management-system)
+5. Access the application via browser at http://localhost/school-management-system
+
+RECENT IMPROVEMENTS
+-------------------
+Database Schema Enhanced:
+- Increased field sizes (VARCHAR 40→100)
+- Fixed "Data too long" errors
+- Enhanced marks table structure
+
+Login System Optimized:
+- Fixed JavaScript redirect issues
+- Improved error handling
+- Enhanced session management
+
+Data Validation Added:
+- Input length validation
+- Error prevention mechanisms
+- Graceful error messages

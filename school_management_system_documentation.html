@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Management System - Project Documentation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .hero-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 4rem 0;
+        }
+        .feature-card {
+            transition: transform 0.3s ease;
+            border: none;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        .status-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+        }
+        .improvement-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        .improvement-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .improvement-list li:last-child {
+            border-bottom: none;
+        }
+        .tech-badge {
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold mb-4">School Management System</h1>
+                    <p class="lead mb-4">Complete Educational Platform for Schools and Small Institutes</p>
+                    <div class="d-flex gap-3">
+                        <a href="login.php" class="btn btn-light btn-lg">
+                            <i class="fas fa-sign-in-alt me-2"></i>Login to System
+                        </a>
+                        <a href="index.php" class="btn btn-outline-light btn-lg">
+                            <i class="fas fa-home me-2"></i>Home Page
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <div class="card bg-white bg-opacity-10 text-white border-0">
+                                <div class="card-body text-center">
+                                    <i class="fas fa-users fa-2x mb-2"></i>
+                                    <h5>4 User Roles</h5>
+                                    <small>Admin, Teacher, Student, Owner</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="card bg-white bg-opacity-10 text-white border-0">
+                                <div class="card-body text-center">
+                                    <i class="fas fa-database fa-2x mb-2"></i>
+                                    <h5>24 Tables</h5>
+                                    <small>Comprehensive Database</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project Overview Section -->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-12 text-center mb-5">
+                <h2 class="display-6 fw-bold">📋 Project Overview</h2>
+                <p class="lead text-muted">PHP School management system developed for schools or small institutes to maintain records related to students, teachers, and other academic activities</p>
+            </div>
+        </div>
+
+        <div class="row mb-5">
+            <div class="col-lg-8 mx-auto">
+                <div class="card border-primary">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">
+                            <i class="fas fa-project-diagram me-2"></i>Project Definition
+                        </h5>
+                        <p class="card-text">
+                            The School Management System is a comprehensive web-based application designed to streamline educational institution operations. 
+                            It provides an integrated platform to manage academic and administrative tasks efficiently, reducing manual workload and improving data accessibility. 
+                            The system supports multiple user roles with role-based access control, ensuring appropriate permissions for administrators, teachers, students, and owners.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Key Features Section -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <h3 class="mb-4 text-center"><i class="fas fa-star text-warning me-2"></i>Key Features & Functionality</h3>
+                
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card feature-card h-100 position-relative">
+                            <span class="badge bg-info status-badge">Core</span>
+                            <div class="card-body">
+                                <div class="text-center mb-3">
+                                    <i class="fas fa-user-graduate fa-2x text-info"></i>
+                                </div>
+                                <h5 class="card-title text-center">Student Record Management</h5>
+                                <p class="card-text text-center">Comprehensive student information management including personal details, academic records, and attendance</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="card feature-card h-100 position-relative">
+                            <span class="badge bg-success status-badge">Core</span>
+                            <div class="card-body">
+                                <div class="text-center mb-3">
+                                    <i class="fas fa-chalkboard-teacher fa-2x text-success"></i>
+                                </div>
+                                <h5 class="card-title text-center">Teacher Record Management</h5>
+                                <p class="card-text text-center">Teacher information management with class assignments and subject specializations</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="card feature-card h-100 position-relative">
+                            <span class="badge bg-warning status-badge">Core</span>
+                            <div class="card-body">
+                                <div class="text-center mb-3">
+                                    <i class="fas fa-calendar-check fa-2x text-warning"></i>
+                                </div>
+                                <h5 class="card-title text-center">Attendance Management</h5>
+                                <p class="card-text text-center">Track student attendance with detailed reporting and analytics</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="card feature-card h-100 position-relative">
+                            <span class="badge bg-primary status-badge">Core</span>
+                            <div class="card-body">
+                                <div class="text-center mb-3">
+                                    <i class="fas fa-clipboard-list fa-2x text-primary"></i>
+                                </div>
+                                <h5 class="card-title text-center">Exam Result Upload</h5>
+                                <p class="card-text text-center">Upload and manage student exam results with easy viewing options</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="card feature-card h-100 position-relative">
+                            <span class="badge bg-danger status-badge">Core</span>
+                            <div class="card-body">
+                                <div class="text-center mb-3">
+                                    <i class="fas fa-bus fa-2x text-danger"></i>
+                                </div>
+                                <h5 class="card-title text-center">Bus Service Management</h5>
+                                <p class="card-text text-center">Manage student transportation with route tracking and location services</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="card feature-card h-100 position-relative">
+                            <span class="badge bg-secondary status-badge">UI</span>
+                            <div class="card-body">
+                                <div class="text-center mb-3">
+                                    <i class="fas fa-sun fa-2x text-secondary"></i>
+                                </div>
+                                <h5 class="card-title text-center">Dark Theme Support</h5>
+                                <p class="card-text text-center">User-friendly interface with dark theme option for comfortable viewing</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Additional Features Section -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <h3 class="mb-4 text-center"><i class="fas fa-plus-circle text-info me-2"></i>Additional Features</h3>
+                
+                <div class="row g-3">
+                    <div class="col-md-3 col-6">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <i class="fas fa-file-alt fa-2x text-primary mb-2"></i>
+                                <p class="card-text">Notice Upload</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <i class="fas fa-sticky-note fa-2x text-success mb-2"></i>
+                                <p class="card-text">Notes Upload</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <i class="fas fa-book fa-2x text-warning mb-2"></i>
+                                <p class="card-text">Syllabus Management</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <i class="fas fa-clock fa-2x text-danger mb-2"></i>
+                                <p class="card-text">Time Table</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Technical Stack Section -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <h3 class="mb-4 text-center"><i class="fas fa-laptop-code text-primary me-2"></i>Technical Stack</h3>
+                
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header bg-primary text-white">
+                                <h5 class="mb-0"><i class="fas fa-code me-2"></i>Backend Technologies</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex flex-wrap gap-2">
+                                    <span class="badge bg-primary tech-badge">PHP 8.1</span>
+                                    <span class="badge bg-success tech-badge">MySQL</span>
+                                    <span class="badge bg-info tech-badge">PHPMailer</span>
+                                    <span class="badge bg-warning tech-badge">Session Management</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header bg-dark text-white">
+                                <h5 class="mb-0"><i class="fas fa-desktop me-2"></i>Frontend Technologies</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex flex-wrap gap-2">
+                                    <span class="badge bg-dark tech-badge">HTML5</span>
+                                    <span class="badge bg-dark tech-badge">CSS3</span>
+                                    <span class="badge bg-info tech-badge">JavaScript</span>
+                                    <span class="badge bg-success tech-badge">jQuery</span>
+                                    <span class="badge bg-primary tech-badge">Bootstrap 5</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- User Roles Section -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <h3 class="mb-4 text-center"><i class="fas fa-users-cog text-success me-2"></i>User Roles & Access</h3>
+                
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>Role</th>
+                                <th>Access Level</th>
+                                <th>Key Responsibilities</th>
+                                <th>Default Credentials</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Administrator</strong></td>
+                                <td>Full Access</td>
+                                <td>Manage students, teachers, classes, and system settings</td>
+                                <td>admin@gmail.com / 123</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Teacher</strong></td>
+                                <td>Limited Access</td>
+                                <td>Manage class attendance, upload marks, view timetable</td>
+                                <td>teacher@gmail.com / 123</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Student</strong></td>
+                                <td>View Only</td>
+                                <td>View results, timetable, notices, and personal information</td>
+                                <td>student@gmail.com / 123</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Owner</strong></td>
+                                <td>Financial Access</td>
+                                <td>View financial reports, student/teacher lists, payments</td>
+                                <td>owner@gmail.com / 123</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="card mt-3">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fas fa-key me-2 text-warning"></i>Password Policy</h5>
+                        <p class="card-text">
+                            Default passwords for all roles are set to <strong>123</strong> for demonstration purposes. 
+                            For new teacher and student accounts, the default password is set to their <strong>date of birth</strong> (e.g., if DOB is 12 July 2000, password is 12072000).
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- System Modules Section -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <h3 class="mb-4 text-center"><i class="fas fa-puzzle-piece text-info me-2"></i>System Modules</h3>
+                
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header bg-info text-white">
+                                <h5 class="mb-0"><i class="fas fa-user-shield me-2"></i>Admin Panel</h5>
+                            </div>
+                            <div class="card-body">
+                                <ul class="mb-0">
+                                    <li>Student and teacher record management</li>
+                                    <li>Marks and attendance tracking</li>
+                                    <li>Notice, notes, and syllabus upload</li>
+                                    <li>Bus service management</li>
+                                    <li>Leave management</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header bg-success text-white">
+                                <h5 class="mb-0"><i class="fas fa-chalkboard-teacher me-2"></i>Teacher Panel</h5>
+                            </div>
+                            <div class="card-body">
+                                <ul class="mb-0">
+                                    <li>Attendance management for assigned classes</li>
+                                    <li>Marks upload and result management</li>
+                                    <li>Leave application and approval</li>
+                                    <li>Timetable viewing</li>
+                                    <li>Student progress tracking</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header bg-warning text-dark">
+                                <h5 class="mb-0"><i class="fas fa-user-graduate me-2"></i>Student Panel</h5>
+                            </div>
+                            <div class="card-body">
+                                <ul class="mb-0">
+                                    <li>View exam results and progress reports</li>
+                                    <li>Check timetable and syllabus</li>
+                                    <li>View notices and uploaded notes</li>
+                                    <li>Track bus location</li>
+                                    <li>Apply for leave</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header bg-danger text-white">
+                                <h5 class="mb-0"><i class="fas fa-crown me-2"></i>Owner Panel</h5>
+                            </div>
+                            <div class="card-body">
+                                <ul class="mb-0">
+                                    <li>Financial reports and payment tracking</li>
+                                    <li>Student and teacher lists</li>
+                                    <li>System usage analytics</li>
+                                    <li>Institute performance overview</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Setup & Installation Section -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <h3 class="mb-4 text-center"><i class="fas fa-cog text-secondary me-2"></i>Setup & Installation</h3>
+                
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fas fa-server me-2 text-primary"></i>System Requirements</h5>
+                        <ul>
+                            <li><strong>Web Server:</strong> Apache (XAMPP recommended)</li>
+                            <li><strong>Backend:</strong> PHP 8.1</li>
+                            <li><strong>Database:</strong> MySQL</li>
+                            <li><strong>Browser:</strong> Modern web browser (Chrome, Firefox, Safari, Edge)</li>
+                        </ul>
+                        
+                        <h5 class="mt-4 card-title"><i class="fas fa-download me-2 text-success"></i>Installation Steps</h5>
+                        <ol>
+                            <li>Start XAMPP and ensure Apache and MySQL servers are running</li>
+                            <li>Create a database named <code>_sms</code> in phpMyAdmin</li>
+                            <li>Import the database schema from <code>database/_sms.sql</code></li>
+                            <li>Place the project folder in your htdocs directory (e.g., <code>C:\xampp\htdocs\school-management-system</code>)</li>
+                            <li>Access the application via browser at <code>http://localhost/school-management-system</code></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Recent Improvements Section -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <h3 class="mb-4 text-center"><i class="fas fa-wrench text-warning me-2"></i>Recent Improvements</h3>
+                
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card border-success">
+                            <div class="card-body">
+                                <h5 class="card-title text-success">
+                                    <i class="fas fa-database me-2"></i>Database Schema Enhanced
+                                </h5>
+                                <ul class="mb-0">
+                                    <li>Increased field sizes (VARCHAR 40→100)</li>
+                                    <li>Fixed "Data too long" errors</li>
+                                    <li>Enhanced marks table structure</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="card border-primary">
+                            <div class="card-body">
+                                <h5 class="card-title text-primary">
+                                    <i class="fas fa-sign-in-alt me-2"></i>Login System Optimized
+                                </h5>
+                                <ul class="mb-0">
+                                    <li>Fixed JavaScript redirect issues</li>
+                                    <li>Improved error handling</li>
+                                    <li>Enhanced session management</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="card border-info">
+                            <div class="card-body">
+                                <h5 class="card-title text-info">
+                                    <i class="fas fa-shield-alt me-2"></i>Data Validation Added
+                                </h5>
+                                <ul class="mb-0">
+                                    <li>Input length validation</li>
+                                    <li>Error prevention mechanisms</li>
+                                    <li>Graceful error messages</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- System Status -->
+        <div class="bg-primary text-white py-4 rounded">
+            <div class="container text-center">
+                <h5 class="mb-0">
+                    <i class="fas fa-clipboard-check me-2"></i>
+                    School Management System - Fully Operational!
+                </h5>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
