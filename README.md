@@ -27,13 +27,12 @@ PHP School management system developed for schools or small institutes. You can 
   14. Dark theme support
   15. Multi-Language Support <small style="color: orange;">(new)</small>
 
-## 🦤 SCREENSHOTS
+
 
 ### Pre-View
 <div style="display: flex;flex-direction: column; grid-gap: 10px;">
      <div style="display: flex; grid-gap: 10px;">
-        <img src="screenshots/1.png" alt="screenshots" width="49%" style="border: 2px solid lightgreen"/>
-        <img src="screenshots/2.png" alt="screenshots" width="49%" style="border: 2px solid lightgreen"/>
+       
     </div>
 </div>
 <br>
@@ -41,29 +40,23 @@ PHP School management system developed for schools or small institutes. You can 
 ### Admin View
 <div style="display: flex;flex-direction: column; grid-gap: 10px;">
    <div style="display: flex; grid-gap: 10px;">
-        <img src="screenshots/oranbyte1.png" alt="screenshots" width="49%" style="border: 2px solid lightgreen"/>
-        <img src="screenshots/4.png" alt="screenshots" width="49%" style="border: 2px solid lightgreen"/>
+        
     </div>
      <div style="display: flex; grid-gap: 10px;">
-        <img src="screenshots/5.png" alt="screenshots" width="49%" style="border: 2px solid lightgreen"/>
-        <img src="screenshots/6.png" alt="screenshots" width="49%" style="border: 2px solid lightgreen"/>
+
     </div>
      <div style="display: flex; grid-gap: 10px;">
-        <img src="screenshots/7.png" alt="screenshots" width="49%" style="border: 2px solid lightgreen"/>
-        <img src="screenshots/8.png" alt="screenshots" width="49%" style="border: 2px solid lightgreen"/>
+       
     </div>
      <div style="display: flex; grid-gap: 10px;">
-        <img src="screenshots/9.png" alt="screenshots" width="49%" style="border: 2px solid lightgreen"/>
-        <img src="screenshots/10.png" alt="screenshots" width="49%" style="border: 2px solid lightgreen"/>
-    </div>
+        
 </div>
 <br>
 
 ### Teacher View
 <div style="display: flex;flex-direction: column; grid-gap: 10px;">
     <div style="display: flex; grid-gap: 10px;">
-        <img src="screenshots/11.png" alt="screenshots" width="49%" style="border: 2px solid lightgreen"/>
-        <img src="screenshots/12.png" alt="screenshots" width="49%" style="border: 2px solid lightgreen"/>
+       
     </div>
 </div>
 <br>
@@ -71,15 +64,12 @@ PHP School management system developed for schools or small institutes. You can 
 ### Student View
 <div style="display: flex;flex-direction: column; grid-gap: 10px;">
    <div style="display: flex; grid-gap: 10px;">
-        <img src="screenshots/13.png" alt="screenshots" width="49%" style="border: 2px solid lightgreen"/>
-        <img src="screenshots/14.png" alt="screenshots" width="49%" style="border: 2px solid lightgreen"/>
+ 
     </div>
     <div style="display: flex; grid-gap: 10px;">
-        <img src="screenshots/15.png" alt="screenshots" width="49%" style="border: 2px solid lightgreen"/>
-        <img src="screenshots/16.png" alt="screenshots" width="49%" style="border: 2px solid lightgreen"/>
-    </div>
+   </div>
     <div style="display: flex; grid-gap: 10px;">
-        <img src="screenshots/20.png" alt="screenshots" width="49%" style="border: 2px solid lightgreen"/>
+      
     </div>
     
 </div>
@@ -89,8 +79,7 @@ PHP School management system developed for schools or small institutes. You can 
 ### Owner View
 <div style="display: flex;flex-direction: column; grid-gap: 10px;">
     <div style="display: flex; grid-gap: 10px;">
-        <img src="screenshots/17.png" alt="screenshots" width="49%" style="border: 2px solid lightgreen"/>
-        <img src="screenshots/19.png" alt="screenshots" width="49%" style="border: 2px solid lightgreen"/>
+
     </div>
     
 </div>
