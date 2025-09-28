@@ -7,7 +7,7 @@ student-management-system
   2. MySQL database  
   3. Bootstrap 5
   4. JQuery, JavaScript
-  5. HTML, CSS
+  5. HTML, python3, CSS.
 
 ## 💡 FEATURES 
   1. student record management
